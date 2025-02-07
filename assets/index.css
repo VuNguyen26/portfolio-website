@@ -14,10 +14,9 @@ body {
     position: relative;
 }
 
-/* Chỉnh logo */
 .logo {
     display: flex;
-    align-items: center; /* Đảm bảo logo căn giữa */
+    align-items: center;
 }
 
 .logo img {
@@ -28,14 +27,12 @@ body {
     margin-right: 20px;
 }
 
-/* Chỉnh flexbox cho menu */
 .menu-container {
     display: flex;
-    align-items: center; /* Căn tất cả phần tử theo chiều dọc */
-    gap: 30px; /* Tạo khoảng cách giữa nút và menu */
+    align-items: center;
+    gap: 30px;
 }
 
-/* Button "DANH MỤC" */
 .menubtn {
     background-color: #942046;
     color: white;
@@ -46,9 +43,9 @@ body {
     font-weight: bold;
     border-radius: 10px;
     transition: background 0.3s;
-    height: 40px; /* Đồng bộ chiều cao */
+    height: 40px;
     display: flex;
-    align-items: center; /* Giữ nội dung căn giữa */
+    align-items: center;
     margin-top: 80px;
 }
 
@@ -56,7 +53,6 @@ body {
     background-color: #b32d5b;
 }
 
-/* Chỉnh menu ngang hàng */
 .nav {
     list-style: none;
     display: flex;
@@ -80,7 +76,6 @@ body {
     color: #f4a261;
 }
 
-/* Dropdown Menu */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -131,7 +126,7 @@ body {
     background-color: #f1f1f1;
 }
 
-/* Nội dung */
+
 #slider,
 #content,
 #footer {
@@ -143,12 +138,13 @@ body {
     background: white;
     border-radius: 20px;
     padding: 5px 10px;
-    width: 40%;
+    width: 20%;
     max-width: 500px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: -50px;
 }
 
 .search-bar input {
@@ -167,4 +163,43 @@ body {
     font-size: 18px;
     padding: 5px;
     color: #942046;
+}
+.cart-container {
+    position: absolute;
+    right: 50px;
+    top: 15px;
+}
+
+#cart-btn {
+    background: #942046;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#cart-btn:hover {
+    background: #b32d5b;
+}
+
+#cart-text {
+    font-size: 16px;
+}
+
+#cart-count {
+    background: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 50%;
+    min-width: 24px;
+    text-align: center;
 }
