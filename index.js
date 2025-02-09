@@ -33,3 +33,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateCartCount(cartItems);
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".banner-img");
+    let currentIndex = 0;
+
+    function changeBanner() {
+        images[currentIndex].classList.remove("active");
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add("active");
+    }
+    images[0].classList.add("active");
+
+    setInterval(changeBanner, 3000);
+});
